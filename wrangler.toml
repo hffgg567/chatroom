@@ -1,0 +1,29 @@
+name = "cloudchat"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+# D1 数据库
+[[d1_databases]]
+binding = "DB"
+database_name = "cloudchat"
+database_id = "your-d1-database-id"
+
+# KV 命名空间 (缓存)
+[[kv_namespaces]]
+binding = "CACHE"
+id = "your-kv-namespace-id"
+
+# R2 存储 (临时文件/头像)
+[[r2_buckets]]
+binding = "STORAGE"
+bucket_name = "cloudchat-files"
+
+[vars]
+GITHUB_CLIENT_ID = "your-github-client-id"
+APP_URL = "https://your-app.workers.dev"
+
+# 环境变量密钥 (通过 secrets 配置)
+# GITHUB_CLIENT_SECRET
+# GITHUB_REPO_TOKEN  
+# JWT_SECRET
+# ENCRYPTION_KEY
