@@ -1,0 +1,137 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  padding: 0 var(--spacing-md);
+  background: var(--background-secondary);
+  border-bottom: 1px solid var(--background-tertiary);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.header-link:hover {
+  background: var(--background-tertiary);
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.header-announcements {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.announcement-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-md);
+  font-size: 13px;
+  border-radius: var(--radius-full);
+  background: var(--background-tertiary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.announcement-banner:hover {
+  background: var(--background-input);
+}
+
+.priority-urgent {
+  background: var(--danger);
+  color: white;
+}
+
+.priority-urgent:hover {
+  background: #c42f33;
+}
+
+.priority-high {
+  background: var(--warning);
+  color: black;
+}
+
+.priority-normal {
+  background: var(--primary);
+  color: white;
+}
+
+.priority-low {
+  background: var(--background-tertiary);
+}
+
+.announcement-title {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.announcement-time {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.header-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header-username {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.header-badge {
+  font-size: 10px;
+  padding: 2px 6px;
+  background: var(--primary);
+  color: white;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+}
+
+.header-logout {
+  padding: var(--spacing-xs);
+  color: var(--text-secondary);
+}
+
+.header-logout:hover {
+  color: var(--danger);
+}
