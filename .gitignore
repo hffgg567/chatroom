@@ -1,0 +1,21 @@
+# Logs
+
+node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+
+# Cloudflare
+.wrangler/
+.dev.vars
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Dependencies
+client/node_modules/
